@@ -22,7 +22,6 @@ trait Geneanum
     }
 
     /**
-     * @param int $code
      * @return bool
      * @throws \GeneanumException
      */

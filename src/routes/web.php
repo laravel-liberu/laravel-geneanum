@@ -1,2 +1,2 @@
 <?php
-Route::get('geneanum',function(){return 'Geneanum through package working';});
+Route::get('geneanum',fn() => 'Geneanum through package working');

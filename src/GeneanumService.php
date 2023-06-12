@@ -10,7 +10,7 @@ class GeneanumService
 
     public $client;
 
-    const SEARCH_TYPE = [
+    public const SEARCH_TYPE = [
         'BURIALS' => 'burials',
         'MARIAGE' => 'mariage',
         'BAPTISM' => 'baptism'
@@ -22,8 +22,6 @@ class GeneanumService
     }
 
     /**
-     * @param string $type
-     * @param array $data
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
@@ -35,7 +33,7 @@ class GeneanumService
             'query' => $data
         ]);
         if($this->verify($response->getStatusCode())){
-            return json_decode($response->getBody(), true);
+            return json_decode((string) $response->getBody(), true, 512, JSON_THROW_ON_ERROR);
         }
 
         throw new GeneanumException('Something went wrong', 500);

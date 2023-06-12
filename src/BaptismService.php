@@ -5,12 +5,6 @@ namespace FamilyTree365\Geneanum;
 class BaptismService extends GeneanumService
 {
     /**
-     * @param string $_firstName
-     * @param string $_lastName
-     * @param int $_perPage
-     * @param int $_row
-     * @param int $_sidx
-     * @param int $_page
      * @return mixed
      * @throws GeneanumException
      * @throws \GuzzleHttp\Exception\GuzzleException

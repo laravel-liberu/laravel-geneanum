@@ -5,14 +5,6 @@ namespace FamilyTree365\Geneanum;
 class MariageService extends GeneanumService
 {
     /**
-     * @param string $_firstNameMale
-     * @param string $_lastNameMale
-     * @param string $_firstNameFemale
-     * @param string $_lastNameFemale
-     * @param int $_perPage
-     * @param int $_row
-     * @param int $_sidx
-     * @param int $_page
      * @return mixed
      * @throws GeneanumException
      * @throws \GuzzleHttp\Exception\GuzzleException
